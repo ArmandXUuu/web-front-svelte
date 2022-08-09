@@ -36,9 +36,18 @@
 	</p>
 
 	<p>
-		The <a href="/todos">TODOs</a> page illustrates SvelteKit's data loading and form handling. Try using
-		it with JavaScript disabled!
+		The TODOs page illustrates SvelteKit's data loading and form handling. Try using it with
+		JavaScript disabled! (I deleted this shit)
 	</p>
+
+	<h1>About me</h1>
+	<div style="text-align: center">
+		<img src="/avatar.png" class="avatar" alt="A cool guy" />
+	</div>
+	<strong> WIP </strong>
+	<br />
+	我还没想好😁
+	<br />
 </div>
 
 <style>
@@ -46,5 +55,20 @@
 		width: 100%;
 		max-width: var(--column-width);
 		margin: var(--column-margin-top) auto 0 auto;
+	}
+
+	.avatar {
+		width: 23%;
+		text-align: center;
+		border-radius: 50em;
+		border-color: #666666;
+		border-width: 2px;
+		border-style: solid;
+		transition: transform 200ms;
+	}
+
+	.avatar:hover {
+		transform: scale(1.06);
+		z-index: 1;
 	}
 </style>

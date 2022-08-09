@@ -1,7 +1,3 @@
-<script context="module">
-	export const prerender = true;
-</script>
-
 <script>
 	import Counter from '$lib/Counter.svelte';
 </script>
@@ -20,12 +16,17 @@
 			</picture>
 		</span>
 
-		to your new<br />SvelteKit app
+		to my website 🤓
 	</h1>
 
 	<h2>
-		try editing <strong>src/routes/index.svelte</strong>
+		This project is based on <strong>svelte</strong> <br />
 	</h2>
+	<pre>npm create svelte@latest my-app-name</pre>
+
+	<br />
+	<br />
+	<h2>Here is a cool counter implemented by svelte.</h2>
 
 	<Counter />
 </section>
@@ -41,6 +42,10 @@
 
 	h1 {
 		width: 100%;
+	}
+
+	h2 {
+		text-align: center;
 	}
 
 	.welcome {

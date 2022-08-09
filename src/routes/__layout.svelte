@@ -10,7 +10,14 @@
 </main>
 
 <footer>
-	<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
+	<p style="padding: 1rem 0 0 0;">
+		Welcome to the personal website of <a
+			href="https://www.linkedin.com/in/ziyi-xu-armand"
+			target="_blank">Ziyi XU</a
+		>
+		<br />
+		This site is <em>Work In Progress</em>
+	</p>
 </footer>
 
 <style>
@@ -20,17 +27,20 @@
 		flex-direction: column;
 		padding: 1rem;
 		width: 100%;
+		height: 100%;
 		max-width: 1024px;
 		margin: 0 auto;
 		box-sizing: border-box;
 	}
 
 	footer {
-		display: flex;
+		display: block;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		padding: 40px;
+		width: 100%;
+		font-size: 13px;
+		margin: 2rem 0 0 0;
 	}
 
 	footer a {
@@ -39,7 +49,11 @@
 
 	@media (min-width: 480px) {
 		footer {
-			padding: 40px 0;
+			padding: 0 0;
 		}
+	}
+
+	p {
+		text-align: center;
 	}
 </style>

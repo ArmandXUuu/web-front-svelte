@@ -1,8 +1,8 @@
 @import '@fontsource/fira-mono';
 
 :root {
-	font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-family: 'Open Sans', Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+		Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
 	--font-mono: 'Fira Mono', monospace;
 	--pure-white: #ffffff;
 	--primary-color: #b9c6d2;
@@ -24,7 +24,10 @@ body {
 		180deg,
 		var(--primary-color) 0%,
 		var(--secondary-color) 10.45%,
-		var(--tertiary-color) 41.35%
+		var(--tertiary-color) 20.35%,
+		var(--pure-white) 30%,
+		var(--pure-white) 90%,
+		var(--tertiary-color) 100%
 	);
 }
 
@@ -76,7 +79,7 @@ h1 {
 }
 
 h2 {
-	font-size: 1rem;
+	font-size: 1.5rem;
 }
 
 pre {
@@ -88,6 +91,12 @@ pre {
 	padding: 0.5em;
 	overflow-x: auto;
 	color: var(--text-color);
+}
+
+code {
+	font-family: var(--font-mono);
+	font-size: 17px;
+	font-weight: normal;
 }
 
 input,
