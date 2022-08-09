@@ -20,41 +20,68 @@
 </svelte:head>
 
 <div class="content">
-	<h1>About this app</h1>
+	<section id="site">
+		<h1>About this site - How I deploied it?</h1>
+		<p>
+			First I bought a cool domain and chose Cloudflare as the DNS provider. One of it's benefit is
+			that I cantake advantage of the edge network that comes with Cloudflare and its protection
+			features.
+		</p>
+		<p>
+			Then it's time to choose techniques for front-end and back-ends, and then deploy them. From my
+			internship experience this is not difficult, I rented a virtual machine <i
+				>(pretty low performance beacuse I'm poor)</i
+			>
+			and set <code>Docker</code> on it.
+			<br />
+		</p>
 
-	<p>
-		This is a <a href="https://kit.svelte.dev">SvelteKit</a> app. You can make your own by typing the
-		following into your command line and following the prompts:
-	</p>
+		<p>So the general structure is shown in this figure:</p>
 
-	<pre>npm create svelte@latest</pre>
+		<div style="text-align: center">
+			<a href="schema.png" target="_blank" rel="noopener noreferrer">
+				<img src="schema.png" alt="The strcture of my site" style="width: 90%;" /></a
+			>
+		</div>
+	</section>
 
-	<p>
-		The page you're looking at is purely static HTML, with no client-side interactivity needed.
-		Because of that, we don't need to load any JavaScript. Try viewing the page's source, or opening
-		the devtools network panel and reloading.
-	</p>
+	<secton id="app">
+		<h1>About this app</h1>
 
-	<p>
-		The TODOs page illustrates SvelteKit's data loading and form handling. Try using it with
-		JavaScript disabled! (I deleted this shit)
-	</p>
+		<p>
+			This is a <a href="https://kit.svelte.dev">SvelteKit</a> app. You can make your own by typing the
+			following into your command line and following the prompts:
+		</p>
 
-	<h1>About me</h1>
-	<div style="text-align: center">
-		<img src="/avatar.png" class="avatar" alt="A cool guy" />
-	</div>
-	<strong> WIP </strong>
-	<br />
-	我还没想好😁
-	<br />
+		<pre>npm create svelte@latest</pre>
+
+		<p>
+			The page you're looking at is purely static HTML, with no client-side interactivity needed.
+			Because of that, we don't need to load any JavaScript. Try viewing the page's source, or
+			opening the devtools network panel and reloading.
+		</p>
+
+		<p>
+			The TODOs page illustrates SvelteKit's data loading and form handling. Try using it with
+			JavaScript disabled! (I deleted this shit)
+		</p>
+	</secton>
+
+	<section id="me">
+		<h1>About me</h1>
+		<div style="text-align: center">
+			<img src="/avatar.png" class="avatar" alt="A cool guy" />
+		</div>
+		<strong> WIP </strong>
+		<br />
+		我还没想好😁
+		<br />
+	</section>
 </div>
 
 <style>
 	.content {
 		width: 100%;
-		max-width: var(--column-width);
-		margin: var(--column-margin-top) auto 0 auto;
 	}
 
 	.avatar {
